@@ -33,14 +33,14 @@ const App = () => {
   //Switches to break time when session time runs out
   useEffect(() => {
     if (sessionTime === "00:00") {
-      const audio = new Audio("src/audio/Timer.mp3");
+      const audio = new Audio("https://github.com/AyaanDanish/ClockApp-React/raw/main/src/audio/Timer.mp3");
       audio.play();
       setIsBreakTime(true);
       setSessionTime("00:01");
     }
 
     if (breakTime === "00:00") {
-      const audio = new Audio("src/audio/Timer.mp3");
+      const audio = new Audio("https://github.com/AyaanDanish/ClockApp-React/raw/main/src/audio/Timer.mp3");
       audio.play();
       handleReset();
     }
